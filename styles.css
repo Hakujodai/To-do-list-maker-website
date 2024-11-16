@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* 
+{
+  box-sizing: border-box;
+}
+.intro 
+{
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #161616;
+  transition: 1s;
+}
+.logo-header 
+{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f9f6c6;
+}
+.logo 
+{
+  position: relative;
+  display: inline-block;
+  opacity: 0;
+}
+.logo.active 
+{
+  bottom: 0;
+  opacity: 1;
+  transition: ease-in-out 0.5s;
+}
+.logo.fade 
+{
+  bottom: 0;
+  opacity: 0;
+  transition: ease-in-out 0.2s;
+}
+body 
+{
+  font-family: 'Poppins', sans-serif;
+}
+.header 
+{
+  background-color: black;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+.header input
+{
+  margin: 0;
+  border: none;
+  border-radius: 17px;
+  width: 30%;
+  padding: 10px;
+  float: center;
+  font-size: 16px;
+}
+.addBtn
+{
+  padding: 10px;
+  border-radius: 10px;
+  background: #d9d9d9;
+  color: #555;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.addBtn:hover
+{
+  background-color: #bbb;
+}
+.notes-container
+{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+.note
+{
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  position: relative;
+}
+.note-header
+{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.note .close-note
+{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: red;
+}
+ul 
+{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ul li 
+{
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+ul li:nth-child(odd) 
+{
+  background: #f9f9f9;
+}
+ul li:hover 
+{
+  background: #ddd;
+}
+ul li.checked 
+{
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+.close 
+{
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px;
+  cursor: pointer;
+}
