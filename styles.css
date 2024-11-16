@@ -61,6 +61,11 @@ body
   float: center;
   font-size: 16px;
 }
+#noteTitle
+{
+  width: 120px;
+  min-width: 120px;
+}
 .addBtn
 {
   padding: 10px;
